@@ -29,8 +29,10 @@ def get_server_info(server):
           f"Network usage: {network_usage} bytes")
 
 def main():
+  # Prompt the user for a URL
+  server = input("Enter a URL: ")
+
   # Get the server information
-  server = "example.com"
   server_info = get_server_info(server)
 
   # Print the server information
